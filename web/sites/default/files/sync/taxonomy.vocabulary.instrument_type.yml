@@ -1,0 +1,8 @@
+uuid: 38a310b3-c643-4ab5-8d04-9994664b0d5a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Instrument type'
+vid: instrument_type
+description: ''
+weight: 0

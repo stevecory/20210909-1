@@ -1,0 +1,29 @@
+uuid: cf9f81e0-5146-41e8-80ec-81eca2256039
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrument_type
+    - node.type.instrument
+    - taxonomy.vocabulary.instrument_type
+id: node.instrument.field_instrument_type
+field_name: field_instrument_type
+entity_type: node
+bundle: instrument
+label: 'Instrument type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      instrument_type: instrument_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: af56c812-7174-4f79-822f-8ad85b372c44
+langcode: en
+status: true
+dependencies: {  }
+name: instrument
+label: Instrument
+effects:
+  4a31cdcf-12c6-4ddf-9297-920ed6ce4db6:
+    uuid: 4a31cdcf-12c6-4ddf-9297-920ed6ce4db6
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

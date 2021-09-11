@@ -1,0 +1,23 @@
+uuid: ea68e381-bfba-488f-a0a8-e18defc665cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter_followers
+    - node.type.artist
+id: node.artist.field_twitter_followers
+field_name: field_twitter_followers
+entity_type: node
+bundle: artist
+label: 'Twitter followers'
+description: 'Please enter the number of Twitter followers this artist has.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

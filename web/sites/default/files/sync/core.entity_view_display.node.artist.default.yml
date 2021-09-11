@@ -1,0 +1,80 @@
+uuid: 0140132a-e6c7-4348-9650-64dbf8a37010
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artist.field_active
+    - field.field.node.artist.field_genre_ref
+    - field.field.node.artist.field_photo
+    - field.field.node.artist.field_short_biography
+    - field.field.node.artist.field_twitter_followers
+    - field.field.node.artist.field_year_started
+    - image.style.medium
+    - node.type.artist
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.artist.default
+targetEntityType: node
+bundle: artist
+mode: default
+content:
+  field_active:
+    weight: 3
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_genre_ref:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_short_biography:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_twitter_followers:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_year_started:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

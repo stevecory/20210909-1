@@ -1,0 +1,8 @@
+uuid: c6a54d69-80ca-494c-b121-c412a17bc94a
+langcode: en
+status: true
+dependencies: {  }
+id: date_regular
+label: 'Date Regular'
+locked: false
+pattern: m/d/Y

@@ -1,0 +1,14 @@
+uuid: efd54c8e-1262-4b0a-933a-0ccf9d989ac1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.instrument_admin
+  module:
+    - user
+id: user_add_role_action.instrument_admin
+label: 'Add the Instrument admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: instrument_admin

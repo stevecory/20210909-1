@@ -1,0 +1,54 @@
+uuid: 01dff5f8-6888-4499-a11e-91d5fce9eb7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.artist.field_active
+    - field.field.node.artist.field_genre_ref
+    - field.field.node.artist.field_photo
+    - field.field.node.artist.field_short_biography
+    - field.field.node.artist.field_twitter_followers
+    - field.field.node.artist.field_year_started
+    - image.style.thumbnail
+    - node.type.artist
+  module:
+    - image
+    - text
+    - user
+id: node.artist.teaser
+targetEntityType: node
+bundle: artist
+mode: teaser
+content:
+  field_genre_ref:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_photo:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+  field_short_biography:
+    type: text_trimmed
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+hidden:
+  field_active: true
+  field_twitter_followers: true
+  field_year_started: true
+  links: true

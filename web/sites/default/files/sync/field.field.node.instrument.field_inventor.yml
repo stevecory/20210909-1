@@ -1,0 +1,19 @@
+uuid: 26e035f0-35c3-43f7-ad64-8303682d8586
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inventor
+    - node.type.instrument
+id: node.instrument.field_inventor
+field_name: field_inventor
+entity_type: node
+bundle: instrument
+label: Inventor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

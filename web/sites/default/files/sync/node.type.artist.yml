@@ -1,0 +1,17 @@
+uuid: 94f94928-85de-49df-8120-12e9309d3d44
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Artist
+type: artist
+description: 'Use this content type to create a new musical artist on the site, including their name, photo, genre, and other information.'
+help: 'The more information you populate, the better the site will be!'
+new_revision: false
+preview_mode: 1
+display_submitted: false

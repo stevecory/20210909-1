@@ -1,0 +1,16 @@
+uuid: 1f3cf68e-b5ca-4ede-803a-393d1ea0ff0b
+langcode: en
+status: true
+dependencies: {  }
+id: instrument_admin
+label: 'Instrument admin'
+weight: 3
+is_admin: null
+permissions:
+  - 'create instrument content'
+  - 'delete instrument revisions'
+  - 'delete own instrument content'
+  - 'edit any instrument content'
+  - 'edit own instrument content'
+  - 'revert instrument revisions'
+  - 'view instrument revisions'

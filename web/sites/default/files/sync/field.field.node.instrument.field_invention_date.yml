@@ -1,0 +1,21 @@
+uuid: 49759bda-2f38-4891-b785-4480696a5b85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_invention_date
+    - node.type.instrument
+  module:
+    - datetime
+id: node.instrument.field_invention_date
+field_name: field_invention_date
+entity_type: node
+bundle: instrument
+label: 'Invention Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

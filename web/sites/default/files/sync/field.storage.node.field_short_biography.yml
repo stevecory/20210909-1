@@ -1,0 +1,19 @@
+uuid: 102ca3de-f56c-493b-9bec-17d01019f4ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_short_biography
+field_name: field_short_biography
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

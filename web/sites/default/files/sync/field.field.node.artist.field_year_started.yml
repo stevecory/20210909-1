@@ -1,0 +1,21 @@
+uuid: 2b3f736f-1245-4ae6-af26-7ecf520c5361
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_started
+    - node.type.artist
+  module:
+    - options
+id: node.artist.field_year_started
+field_name: field_year_started
+entity_type: node
+bundle: artist
+label: 'Year started'
+description: "Please select the year of this artist's first release or performance.\r\n"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

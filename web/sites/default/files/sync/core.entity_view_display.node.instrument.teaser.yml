@@ -1,0 +1,65 @@
+uuid: 8f87179f-c492-423a-87aa-b67eb8e8b8bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instrument.field_artist
+    - field.field.node.instrument.field_instrument_type
+    - field.field.node.instrument.field_invention_date
+    - field.field.node.instrument.field_inventor
+    - field.field.node.instrument.field_photo_instrument
+    - node.type.instrument
+  module:
+    - datetime
+    - image
+    - user
+id: node.instrument.teaser
+targetEntityType: node
+bundle: instrument
+mode: teaser
+content:
+  field_artist:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_instrument_type:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_invention_date:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_inventor:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_photo_instrument:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  links: true

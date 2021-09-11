@@ -1,0 +1,20 @@
+uuid: 263746b2-4f10-4382-bcfe-52eb5e47bd5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_twitter_followers
+field_name: field_twitter_followers
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
